@@ -29,6 +29,15 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #E8F5E9;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
         nav ul {
             list-style: none;
             margin: 0;
@@ -114,6 +123,32 @@
             border-radius: 0.5rem;
             margin-bottom: 1rem;
         }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s;
+            }
+            nav ul.active {
+                max-height: 300px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            main {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .species-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -121,6 +156,7 @@
 
     <!-- Navigation Menu -->
     <nav>
+        <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</button>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="species.html">Species</a></li>

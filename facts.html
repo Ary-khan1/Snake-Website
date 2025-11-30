@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts | Snake World</title>
+
+    <!-- Import the Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Basic Reset and Font */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #8B6F47;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #2d2416;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #F5E6D3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/snake.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-family: 'Creepster', cursive;
+            letter-spacing: 0.1em;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Content Styling */
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .fact-card {
+            background: #F5E6D3;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .fact-card h3 {
+            margin-top: 0;
+            color: #2d2416;
+            font-size: 1.3rem;
+        }
+
+        .fact-card p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="species.html">Species</a></li>
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Snake Facts</h1>
+    </header>
+
+    <!-- Body Content -->
+    <main>
+        <div class="facts-grid">
+            <div class="fact-card">
+                <h3>No Eyelids</h3>
+                <p>Snakes can't blink! They don't have eyelids, instead they have a transparent scale called a spectacle that protects their eyes.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Flexible Jaws</h3>
+                <p>Snakes can open their mouths up to 150 degrees wide, allowing them to swallow prey much larger than their own head.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Smell with Tongues</h3>
+                <p>Snakes use their forked tongues to collect scent particles from the air and transfer them to the Jacobson's organ in their mouth for analysis.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>No Ears</h3>
+                <p>Snakes don't have external ears. Instead, they sense vibrations through their jawbone and can detect movement through ground vibrations.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Continuous Growth</h3>
+                <p>Snakes shed their skin regularly throughout their lives. Young snakes may shed every few weeks, while adults shed several times a year.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Ancient Creatures</h3>
+                <p>Snakes have been around for over 100 million years, evolving from lizard-like ancestors during the age of dinosaurs.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Temperature Regulation</h3>
+                <p>Snakes are cold-blooded and rely on external heat sources to regulate their body temperature, often basking in the sun.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Diverse Sizes</h3>
+                <p>The smallest snake, the Barbados threadsnake, is only 4 inches long, while the reticulated python can exceed 20 feet in length.</p>
+            </div>
+
+            <div class="fact-card">
+                <h3>Venomous Minority</h3>
+                <p>Only about 600 of the 3,900+ snake species are venomous, and fewer than 200 species pose a serious threat to humans.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

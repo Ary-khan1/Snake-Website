@@ -23,6 +23,33 @@
             line-height: 1.6;
         }
 
+        /* Navigation Menu */
+        nav {
+            background-color: #2d2416;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #F5E6D3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
         /* Header Styling with Background Image */
         header {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -55,17 +82,116 @@
 
         /* Main Content Styling */
         main {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 3rem auto;
             padding: 2rem;
             background: #F5E6D3;
             border-radius: 1rem;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
+
+        /* Three Containers Side by Side */
+        .container-row {
+            display: flex;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .box {
+            flex: 1;
+            background: #F5E6D3;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .box h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #2d2416;
+        }
+
+        .box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            background: #d4c4b0;
+        }
+
+        .box p {
+            margin-top: 0.5rem;
+        }
+
+        .box .habitat {
+            font-weight: 600;
+            color: #8B6F47;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Button Styling */
+        .btn-container {
+            text-align: center;
+            margin: 3rem auto;
+        }
+
+        .btn {
+            background-color: #2d2416;
+            color: #F5E6D3;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FFD700;
+            color: #2d2416;
+        }
+
+        /* Horizontal Fact Container */
+        .fact-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: #F5E6D3;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .fact-container h3 {
+            color: #2d2416;
+            margin-top: 0;
+        }
+
+        .fact-container p {
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="species.html">Species</a></li>
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Header Section -->
     <header>
@@ -79,6 +205,40 @@
         <p>Snakes are fascinating reptiles that have inhabited Earth for over 100 million years. With more than 3,900 species found across every continent except Antarctica, these legless carnivores have adapted to diverse environments from deserts to rainforests, and even oceans. Their unique anatomy includes flexible jaws that can unhinge to swallow prey much larger than their head, forked tongues that detect chemical signals in the air, and specialized scales that allow silent movement across various terrains.</p>
         <p>Despite their fearsome reputation, only about 600 snake species are venomous, and fewer than 200 pose a serious threat to humans. Snakes play crucial roles in ecosystems as both predators and prey, helping control rodent populations and serving as food for birds, mammals, and other reptiles. From the tiny thread snake measuring just 4 inches to the massive reticulated python reaching over 20 feet, these remarkable creatures continue to captivate scientists and nature enthusiasts with their incredible diversity and evolutionary adaptations.</p>
     </main>
+
+    <!-- Three Containers Side by Side -->
+    <div class="container-row">
+        <div class="box">
+            <img src="images/T snake.png" alt="T Snake">
+            <h3>Tree Snake</h3>
+            <p class="habitat">Habitat: Tropical Forests</p>
+            <p>The Tree Snake is an agile climber found in tropical forests. Known for its slender body and excellent camouflage, it hunts birds and small mammals in the canopy.</p>
+        </div>
+        <div class="box">
+            <img src="images/D snake.jpg" alt="D Snake">
+            <h3>Desert Snake</h3>
+            <p class="habitat">Habitat: Arid Deserts</p>
+            <p>The Desert Snake thrives in arid environments with extreme temperatures. Its sandy coloration provides perfect camouflage among rocks and sand dunes.</p>
+        </div>
+        <div class="box">
+            <img src="images/F snake.jpg" alt="F Snake">
+            <h3>Forest Snake</h3>
+            <p class="habitat">Habitat: Dense Woodlands</p>
+            <p>The Forest Snake inhabits dense woodland areas. This nocturnal hunter uses its heat-sensing abilities to locate prey in complete darkness.</p>
+        </div>
+    </div>
+
+    <!-- Button to Species Page -->
+    <div class="btn-container">
+        <a href="species.html" class="btn">Explore More Species</a>
+    </div>
+
+    <!-- Snake Fact Container -->
+    <div class="fact-container">
+        <h3>Did You Know?</h3>
+        <p>Snakes can't blink! They don't have eyelids, instead they have a transparent scale called a spectacle that protects their eyes.</p>
+        <a href="facts.html" class="btn">Discover More Facts</a>
+    </div>
 
 </body>
 
